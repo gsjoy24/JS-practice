@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Joy's Calculator</title>
+		<!-- <link rel="stylesheet" href="bootstrap.min.css" /> -->
+		<!-- <link rel="stylesheet" href="style.css" /> -->
+		<style>
+			.cal-body {
+				box-sizing: border-box;
+				background-color: rgb(25, 11, 11);
+				width: 260px;
+				margin: auto;
+				margin-top: 6rem;
+				padding: 20px;
+				border-radius: 8px;
+				position: relative;
+			}
+			.title {
+				position: absolute;
+				left: 28px;
+				top: 15px;
+				color: white;
+				font-size: 0.5em;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				letter-spacing: 9px;
+			}
+			.screen {
+				margin: 20px 4px;
+				width: 215px;
+				padding: 5px;
+				font-size: 40px;
+				border-radius: 7px;
+				color: #fff;
+				background-color: rgb(42, 21, 59);
+				outline: none;
+				border: 2px solid #fff;
+			}
+			table {
+				margin: auto;
+			}
+			button {
+				width: 50px;
+				height: 50px;
+				margin: 2px;
+				border-radius: 20px 0;
+				background-color: #fff;
+				transition: 0.2s;
+			}
+			button:hover {
+				background-color: rgb(31, 19, 19);
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="cal-body">
+				<p class="title">JOY'S CALCULATOR</p>
+				<input type="text" class="screen" />
+				<table>
+					<tr>
+						<td><button>AC</button></td>
+						<td><button>C</button></td>
+						<td><button>()</button></td>
+						<td><button>/</button></td>
+					</tr>
+					<tr>
+						<td><button>1</button></td>
+						<td><button>2</button></td>
+						<td><button>3</button></td>
+						<td><button>x</button></td>
+					</tr>
+					<tr>
+						<td><button>4</button></td>
+						<td><button>5</button></td>
+						<td><button>6</button></td>
+						<td><button>-</button></td>
+					</tr>
+					<tr>
+						<td><button>7</button></td>
+						<td><button>8</button></td>
+						<td><button>9</button></td>
+						<td><button>+</button></td>
+					</tr>
+					<tr>
+						<td><button>%</button></td>
+						<td><button>0</button></td>
+						<td><button>.</button></td>
+						<td><button>=</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<script>
+			let screen = document.querySelector('.screen');
+			let buttons = document.querySelectorAll('button');
+			let screenValue = '';
+			for (item of buttons) {
+				item.addEventListener('click', (e) => {
+					buttonText = e.target.innerText;
+					if (buttonText == 'x') {
+						buttonText = '*';
+						screenValue += buttonText;
+						screen.value = screenValue;
+					} else if (buttonText == 'AC' || buttonText == 'C') {
+						screenValue = '';
+						screen.value = screenValue;
+					} else if (buttonText == '=') {
+						screen.value = eval(screenValue);
+					} else {
+						screenValue += buttonText;
+						screen.value = screenValue;
+					}
+				});
+			}
+		</script>
+	</body>
+</html>

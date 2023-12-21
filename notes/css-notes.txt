@@ -1,0 +1,36 @@
+1/ 
+.text{
+     color:red;
+     @supports(background : blue){
+          color: green;
+          background: blue;
+     }
+} - with this rule, if the background property is not supported by any browser, than the text color will be red and if the background property is supported, than the text color will be blue.
+
+
+2/
+.box{
+     display: flex;
+     align-content: center;
+     justify-content: center;
+} - with this rule, all the elements in the box will be centered by vertically and horizontally.
+
+
+3/ class{
+     background: url(img), redial-gradient(#222,#333)
+     background-blend-mode: multiply;
+} - with this rule, the img and colors will be blend in the background. person will see both in opacity:05 in background.
+
+
+4/class> *+*{
+     color:red;
+} - with this rule, if the class has multiple elements, then every element will be red colored without the first one.
+
+
+
+
+
+
+
+
+

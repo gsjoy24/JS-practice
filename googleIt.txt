@@ -1,0 +1,29 @@
+1. What is API?
+2. window
+3. location with google map.
+4. Javascript on mdn.
+5. problem solving.
+6. js weekly.
+7. Airbnb style guide. 
+8. watch talk show about programming languages.
+9. es lint.
+
+
+have to learn
+1/ roughting in react.
+2/ react native.
+3/ sass.
+4/ redux and react-redux
+5/ jQuery.
+6/ mongoDB.
+7/ google analytics.
+8/ firebase authentication.
+9/ netlify hosting for react app.
+10/ regex
+11/ react hook form.
+12/ express js
+13/ MySQL.
+14/ object oriented programming.
+15/ docker.
+16/ dotenv.
+17/ mongoose.js

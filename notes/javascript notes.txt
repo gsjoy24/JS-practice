@@ -1,0 +1,15 @@
+									JAVASCRIPT NOTES
+
+1/ find position of any value in array = variableName.indexOf[value]
+2/ add any value to a array's last position = variableName.push(value)
+3/ remove any value from a array's last position = variableName.pop()
+4/ add any value to a array's first position = variableName.unshift(value)
+5/ remove any value from a array's first position = variableName.shift()
+6/ finds how many elements in a array = variableName.length
+7/ "num++" means "num + 1"
+8/ "num--" means "num - 1"
+9/'array.slice(2,5)' means, the log will give us the second to fourth(before the fifth number) number in the array.
+10/ array.includes('will') means, the log will search for the word "will" in the array. true and false are the outputs for this.
+11/ Math.abs(-23) it will provide the positive state of the number if that is negetive.
+12/ Math.round(2.224) it will provide the round figur of the number, as here 2.
+13/ Array.isArray(arrayName) is the method to check if this is a array.

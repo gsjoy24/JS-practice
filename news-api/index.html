@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="synthwave">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NEWS</title>
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body onload="loadNews()">
+		<header class="p-3 lg:p-5 lg:mx-8">
+			<div class="navbar bg-base-100">
+				<div class="navbar-start">
+					<div class="dropdown">
+						<label tabindex="0" class="btn btn-ghost md:hidden">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-5 w-5"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+							</svg>
+						</label>
+						<ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+							<li><a>HOME</a></li>
+							<li tabindex="0">
+								<a class="justify-between">
+									NEWS
+									<svg
+										class="fill-current"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+									>
+										<path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+									</svg>
+								</a>
+								<ul class="p-2">
+									<li><a>National</a></li>
+									<li><a>International</a></li>
+								</ul>
+							</li>
+							<li><a>ABOUT</a></li>
+						</ul>
+					</div>
+					<a class="btn btn-ghost normal-case text-xl">GSJoyNEWS</a>
+				</div>
+				<div class="navbar-center hidden md:flex">
+					<ul class="menu menu-horizontal px-1">
+						<li><a>HOME</a></li>
+						<li tabindex="0">
+							<a>
+								NEWS
+								<svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+									<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+								</svg>
+							</a>
+							<ul class="p-2">
+								<li><a>National</a></li>
+								<li><a>International</a></li>
+							</ul>
+						</li>
+						<li><a>ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<a class="btn">All News</a>
+				</div>
+			</div>
+		</header>
+		<main class="mx-4">
+			<section>
+				<h1 class="text-2xl font-semibold text-center my-6">Today's News</h1>
+
+				<div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+					<!-- 
+            	<div class="card w-full bg-base-100 shadow-xl">
+						<figure><img src="https://www.serebii.net/anime/pictures/pokemon/1093/DP291.jpg" alt="Shoes" /></figure>
+						<div class="card-body">
+							<h2 class="card-title">Shoes!</h2>
+							<p>If a dog chews shoes whose shoes does he choose?</p>
+							<div class="card-actions justify-end">
+								<button class="btn btn-primary">Buy Now</button>
+							</div>
+						</div>
+					</div>
+             -->
+				</div>
+			</section>
+		</main>
+		<script src="js/app.js"></script>
+	</body>
+</html>

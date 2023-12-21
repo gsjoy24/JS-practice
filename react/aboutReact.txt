@@ -1,0 +1,4 @@
+extention have to install 
+1/ reactjs code snippets
+2/ auto import
+3/ react extention pack.

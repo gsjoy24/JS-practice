@@ -1,0 +1,50 @@
+/* ---------------------------------------------------------------------
+TODO: scroll reveal properties and description
+--------------------------------------------------------------------- */
+1/ distance - koto dur theke animation suru hobe;
+2/ delay - page load hobar kotokhn por animation hobe;
+3/ origin - animation kon dik theke hobe;
+4/ duration - kotokhn animation hobe;
+5/ reset - page scroll hole sobsmy animation hote thakbe;
+6/ interval - aker odhik element hole akta animate hobar kotokhn por arekta animate hobe;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://drive.google.com/file/d/16u_oV3ktue7Z4q3QTO8iPPO_QwpOUXpg/view?usp=sharing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

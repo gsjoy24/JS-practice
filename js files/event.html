@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style type="text/css">
+			* {
+				transition: 0.3s ease;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="btn-green">click me</button>
+		<button onclick="btnClick()">click me</button>
+
+		<script>
+			let btn = document.querySelector('#btn-green');
+			btn.onclick = function () {
+				document.body.style.backgroundColor = 'green';
+			};
+
+			function btnClick() {
+				document.body.style.backgroundColor = 'yellow';
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+.login-form {
+	/* display: none;  */
+	max-width: 500px;
+	display: block;
+	margin: auto;
+	margin-top: 50px;
+}
+h2,
+h4 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	letter-spacing: 3px;
+}
+h4 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.transiction-area {
+	display: none;
+	color: #fff;
+}
+.deposit {
+	background-color: #0dcaf0;
+}
+.withdraw {
+	background-color: #6610f2;
+}
+.balance {
+	background-color: orange;
+}
+#withdrawMsgPlace,
+#depositMsgPlace {
+	font-size: 12px;
+	margin-left: 10px;
+	display: inline-block;
+}
+.warning {
+	font-size: 0.8rem;
+}
